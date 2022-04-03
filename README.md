@@ -8,6 +8,10 @@ str.match(/(?<year>[0-9]{4})-[0-9]{2}|[0-9]{2}-(?<year>[0-9]{4})/)
 
 is an error, because you've reused the `year` group name. But sometimes you want to match a thing which can be written in multiple formats (as above). It would be nice to be able to use the same group name for that case.
 
+## Spec text
+
+See [this PR](https://github.com/tc39/ecma262/pull/2721).
+
 ## Other languages
 
 Per [this webpage](https://www.regular-expressions.info/named.html#duplicate), several languages allow duplicate names, although with slightly varying semantics.
