@@ -60,7 +60,7 @@ None yet. I'm waiting to get positive signals from the committee first.
 
 ## Other languages
 
-Per [this webpage](https://www.regular-expressions.info/named.html#duplicate), several languages allow duplicate names, although with slightly varying semantics.
+Per [this webpage](https://www.regular-expressions.info/named.html#duplicate), several languages allow duplicate names, although with slightly varying semantics. I believe that restricting this to groups in different alternatives keeps this proposal in the intersection of their semantics.
 
 ## Previous discussion
 
