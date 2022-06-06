@@ -52,7 +52,7 @@ Consider
 
 The backreference is never useful, because the group to which it refers is in a different alternative. So its behavior is to always match without consuming any input. (That's weird but also how it works for `\1`-style matches.) This is true even with repetitions, because capturing groups within a repeated section are cleared at the start of each iteration. As such there's no reason to ever write this.
 
-Unfortunately, it's currently legal. I am inclined to change that, in the hopes that no one has written code like the above yet with this relatively new, relatively obscure feature. But I may be too optimistic. If we don't want to risk it, this can keep its current match-empty-string behavior; it doesn't actually need to change for this proposal.
+Unfortunately, it's currently legal. This proposal would not change that.
 
 ## Tests
 
