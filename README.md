@@ -10,9 +10,7 @@ is an error, because you've reused the `year` group name. But sometimes you want
 
 ## Status
 
-This proposal is stage 0: it has not been presented to TC39. It will be presented at [the June 2022 meeting](https://github.com/tc39/agendas/blob/main/2022/06.md).
-
-It feels like there is not much design space here, so possibly this could be a needs-consensus PR rather than a proposal. I'd prefer to go through the usual proposal process, though (possibly skipping a few stages), since it's easier to track that way.
+This proposal achieved stage 2 at [the June 2022 meeting](https://github.com/tc39/agendas/blob/main/2022/06.md). I intend to ask for stage 3 at the July 2022 meeting.
 
 ## Spec text
 
@@ -42,6 +40,8 @@ So at most one of those actually will have matched. This proposal says that the 
 
 As with backreferences, the corresponding named property of the `groups` object on a match result refers to whichever of the groups actually participated in the match.
 
+For the purposes of property enumeration order, these named properties are created in the order in which they appear in the regex, regardless of which groups actually participated in the match.
+
 ### Can you _refer_ to a group in a different alternative?
 
 Consider
@@ -56,7 +56,7 @@ Unfortunately, it's currently legal. This proposal would not change that.
 
 ## Tests
 
-None yet. I'm waiting to get positive signals from the committee first.
+None yet. PRs welcome!
 
 ## Other languages
 
