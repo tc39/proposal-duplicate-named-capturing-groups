@@ -10,11 +10,15 @@ is an error, because you've reused the `year` group name. But sometimes you want
 
 ## Status
 
-This proposal achieved stage 2 at [the June 2022 meeting](https://github.com/tc39/agendas/blob/main/2022/06.md). I intend to ask for stage 3 at the July 2022 meeting.
+This proposal achieved stage 3 at [the July 2022 meeting](https://github.com/tc39/agendas/blob/main/2022/07.md). It awaits implementation.
 
 ## Spec text
 
 See [this PR](https://github.com/tc39/ecma262/pull/2721). Spec text should be complete.
+
+## Tests
+
+Tests262 tests are available in [this PR](https://github.com/tc39/test262/pull/3625).
 
 ## Details
 
