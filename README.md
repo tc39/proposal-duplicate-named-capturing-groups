@@ -10,7 +10,9 @@ is an error, because you've reused the `year` group name. But sometimes you want
 
 ## Status
 
-This proposal achieved stage 3 at [the July 2022 meeting](https://github.com/tc39/agendas/blob/main/2022/07.md). It awaits implementation.
+This proposal achieved stage 3 at [the July 2022 meeting](https://github.com/tc39/agendas/blob/main/2022/07.md).
+
+Implementations are in progress. See [this issue](https://github.com/tc39/proposal-duplicate-named-capturing-groups/issues/4) to track current status. As of this writing only Safari has implemented.
 
 ## Spec text
 
