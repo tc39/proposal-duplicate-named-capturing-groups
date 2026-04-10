@@ -1,3 +1,7 @@
+This proposal has been accepted and [landed in the specification](https://github.com/tc39/ecma262/pull/2721). See [this issue](https://github.com/tc39/proposal-duplicate-named-capturing-groups/issues/4) for historical implementation tracking. Further issues should follow [the usual contributing process](https://github.com/tc39/ecma262/blob/main/CONTRIBUTING.md).
+
+Original readme follows.
+
 # Duplicate named capturing groups
 
 Right now, in JavaScript, named capturing groups in a regex need to be unique. So
@@ -10,9 +14,7 @@ is an error, because you've reused the `year` group name. But sometimes you want
 
 ## Status
 
-This proposal achieved stage 3 at [the July 2022 meeting](https://github.com/tc39/agendas/blob/main/2022/07.md).
-
-Implementations are in progress. See [this issue](https://github.com/tc39/proposal-duplicate-named-capturing-groups/issues/4) to track current status. As of this writing only Safari has implemented.
+This proposal achieved stage 4 at [the April 2024 meeting](https://github.com/tc39/notes/blob/e31eed15a11d4e28d3ac4ab442577beabd9f23e7/meetings/2024-04/april-08.md#duplicate-named-capture-groups-for-stage-4).
 
 ## Spec text
 
@@ -20,7 +22,11 @@ See [this PR](https://github.com/tc39/ecma262/pull/2721). Spec text should be co
 
 ## Tests
 
-Tests262 tests are available in [this PR](https://github.com/tc39/test262/pull/3625).
+Tests262 tests are available in:
+
+- https://github.com/tc39/test262/pull/3625
+- https://github.com/tc39/test262/pull/3706
+- https://github.com/tc39/test262/pull/3709
 
 ## Details
 
@@ -59,10 +65,6 @@ Consider
 The backreference is never useful, because the group to which it refers is in a different alternative. So its behavior is to always match without consuming any input. (That's weird but also how it works for `\1`-style matches.) This is true even with repetitions, because capturing groups within a repeated section are cleared at the start of each iteration. As such there's no reason to ever write this.
 
 Unfortunately, it's currently legal. This proposal would not change that.
-
-## Tests
-
-None yet. PRs welcome!
 
 ## Other languages
 
